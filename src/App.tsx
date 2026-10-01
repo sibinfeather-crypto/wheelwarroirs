@@ -71,9 +71,16 @@ export default function App() {
         <div className="flex flex-wrap items-center justify-between gap-4 mb-8 pb-4 border-b border-white/10">
           {/* Brand Mark with Emblem */}
           <div className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-amber-400 via-amber-600 to-amber-900 p-0.5 shadow-lg shadow-amber-500/20">
-              <div className="w-full h-full bg-[#0b1120] rounded-[10px] flex items-center justify-center">
-                <span className="text-lg font-black text-amber-400">🦅</span>
+            <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-amber-400 via-amber-600 to-amber-900 p-0.5 shadow-lg shadow-amber-500/20 shrink-0">
+              <div className="w-full h-full bg-[#0b1120] rounded-[10px] flex items-center justify-center overflow-hidden">
+                <img 
+                  src="/falconclub-logo.png" 
+                  alt="Falcon Club Logo" 
+                  className="w-full h-full object-contain p-1"
+                  onError={(e) => {
+                    (e.currentTarget as HTMLImageElement).src = 'falconclub-logo.png';
+                  }}
+                />
               </div>
             </div>
             <div>
@@ -333,6 +340,14 @@ export default function App() {
             {/* Modal Header */}
             <div className="w-full flex items-center justify-between pb-3 mb-2 border-b border-white/10">
               <div className="flex items-center gap-2">
+                <img 
+                  src="/falconclub-logo.png" 
+                  alt="Falcon Club" 
+                  className="w-6 h-6 object-contain"
+                  onError={(e) => {
+                    (e.currentTarget as HTMLImageElement).src = 'falconclub-logo.png';
+                  }}
+                />
                 <span className="font-cinzel text-base font-bold text-amber-400">
                   {activeImageModal.includes('1.jpg') ? 'Falcon Club App Lobby' : 'Falcon Club Win Go'}
                 </span>
