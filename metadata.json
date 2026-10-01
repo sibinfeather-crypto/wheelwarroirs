@@ -1,0 +1,6 @@
+{
+  "name": "Falcon Club",
+  "description": "Falcon Club official landing page - Claim ₹37 bonus on registration, fast deposits, and minimum withdrawal of only ₹100. Join now!",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
