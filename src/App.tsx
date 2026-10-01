@@ -9,7 +9,6 @@ import {
   Sparkles, 
   ShieldCheck, 
   Zap, 
-  Coins, 
   ExternalLink, 
   Check, 
   Copy, 
@@ -112,19 +111,8 @@ export default function App() {
           {/* LEFT DECISION COLUMN (6 cols) */}
           <div className="lg:col-span-6 flex flex-col justify-center space-y-6">
             
-            {/* Live Announcement Marquee Pill */}
-            <div className="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-slate-900/90 border border-amber-500/30 text-xs w-fit backdrop-blur-md shadow-md">
-              <span className="flex h-2 w-2 relative">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
-                <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
-              </span>
-              <span className="text-amber-400 font-bold tracking-wide uppercase text-[11px]">Instant Bonus Active</span>
-              <span className="text-slate-400" aria-hidden="true">·</span>
-              <span className="text-slate-300 font-medium">Claim ₹37 on sign up</span>
-            </div>
-
             {/* Dominant Headline with Falcon Club Brand */}
-            <div className="space-y-3">
+            <div className="space-y-4">
               <h1 className="font-cinzel text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight text-white leading-[1.08] text-balance">
                 WELCOME TO <br />
                 <span className="gold-gradient-text drop-shadow-[0_2px_15px_rgba(245,158,11,0.3)]">
@@ -133,43 +121,8 @@ export default function App() {
               </h1>
               
               <p className="text-slate-300 text-base sm:text-lg leading-relaxed max-w-xl font-normal">
-                Join India's premier online color prediction and lottery club. Register today to receive your <span className="text-amber-400 font-bold">₹37 Welcome Bonus</span> instantly, with lightning-fast payouts starting at a minimum withdrawal of only <span className="text-emerald-400 font-bold">₹100</span>.
+                Join India's premier online gaming, color prediction, and lottery club. Experience seamless entertainment, fair gameplay, and instant automated payouts 24/7.
               </p>
-            </div>
-
-            {/* Core Value Props Cards (Bento-style 2-column) */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5 pt-1">
-              {/* Card 1: 37 Bonus */}
-              <div className="relative p-4 rounded-2xl bg-gradient-to-b from-[#131b2f] to-[#0c1322] border border-amber-500/30 shadow-lg group hover:border-amber-400/50 transition-all duration-300">
-                <div className="absolute top-3 right-3 text-amber-400/40 group-hover:text-amber-400/80 transition-colors">
-                  <Coins className="w-5 h-5" />
-                </div>
-                <div className="text-[11px] font-bold uppercase tracking-wider text-amber-400 mb-1">
-                  Instant Registration
-                </div>
-                <div className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight flex items-baseline gap-1.5">
-                  ₹37 <span className="text-amber-300 text-sm font-bold uppercase">Bonus</span>
-                </div>
-                <p className="text-slate-400 text-xs mt-1.5 leading-snug">
-                  Credited directly to your wallet upon registration with zero deposit needed.
-                </p>
-              </div>
-
-              {/* Card 2: Minimum Withdrawal 100 */}
-              <div className="relative p-4 rounded-2xl bg-gradient-to-b from-[#131b2f] to-[#0c1322] border border-emerald-500/30 shadow-lg group hover:border-emerald-400/50 transition-all duration-300">
-                <div className="absolute top-3 right-3 text-emerald-400/40 group-hover:text-emerald-400/80 transition-colors">
-                  <Zap className="w-5 h-5" />
-                </div>
-                <div className="text-[11px] font-bold uppercase tracking-wider text-emerald-400 mb-1">
-                  Ultra-Fast Cashout
-                </div>
-                <div className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight flex items-baseline gap-1.5">
-                  ₹100 <span className="text-emerald-300 text-sm font-bold uppercase">Min. Withdrawal</span>
-                </div>
-                <p className="text-slate-400 text-xs mt-1.5 leading-snug">
-                  Instant automated UPI &amp; bank payouts 24/7 with the lowest limit in the market.
-                </p>
-              </div>
             </div>
 
             {/* PRIMARY CTA DECISION BLOCK */}
